@@ -12,38 +12,65 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<div id="mysidenav" class="sidenav">
-    <p class="logo"><span>m</span>-softtech</p>
-    <a href="#" class="icon-a"><i class="fas fa-tachometer-alt"></i>&nbsp;&nbsp;dashboard</a>
-    <a href="#" class="icon-a"><i class="fas fa-tachometer-alt"></i>&nbsp;&nbsp;customers</a>
-    <a href="#" class="icon-a"><i class="fas fa-tachometer-alt"></i>&nbsp;&nbsp;projects</a>
-    <a href="#" class="icon-a"><i class="fas fa-tachometer-alt"></i>&nbsp;&nbsp;orders</a>
-    <a href="#" class="icon-a"><i class="fas fa-tachometer-alt"></i>&nbsp;&nbsp;inventory</a>
-    <a href="#" class="icon-a"><i class="fas fa-tachometer-alt"></i>&nbsp;&nbsp;accounts</a>
-    <a href="#" class="icon-a"><i class="fas fa-tachometer-alt"></i>&nbsp;&nbsp;tasks</a>
-</div>
+<div class="sidebar">
+    <div class="sidebar-brand">
+        <h1>
+            <span>
+                <img src="img/LOGO.png" alt="">
+                accusoft
+            </span>   
+        </h1>
+    </div>
 
-<div id="main">
-    <div class="head">
-        <div class="col-6">
-            <span style="font-size: 30px; cursor: pointer;color: white;" class="nav">&#9776;dashboard</span>
-            </div>
-
-        <div class="col-6">
-            <img src="img/20201116_120249.jpg" class="pro-img" alt="">
-            <p>janki patel<span>web designer</span></p>
-        </div>
-
-        <div class="clearfix"></div>
+    <div class="sidebar-menu">
+        <ul>
+            <li>
+                <a href="#"><i class="fas fa-users"></i>dashboard</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-users"></i>customers</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-users"></i>projects</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-users"></i>orders</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-users"></i>inventory</a>
+            </li>
+            <li>
+                <a href="#"><i class="far fa-user-circle"></i>accounts</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-users"></i>tasks</a>
+            </li>
+        </ul>
     </div>
 </div>
+<div class="main-content">
+    <header>
+        <div class="header-title">
+            <h1>
+                <label for="">
+                    <i class="fas fa-bars"></i>
+                </label>
+                dashboard
+            </h1> 
+            <div class="search-wrapper">
+                <span><i class="fas fa-search"></i></span>
+                <input type="search" placeholder="search here">
+            </div>
+            <div class="user-wrapper">
+                <img src="img/20201116_120249.jpg" width="40px" height="40px" alt="">
+                <div>
+                    <h4>janki patel</h4>
+                    <small>super admin</small>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
 
-
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </body>
 </html>
