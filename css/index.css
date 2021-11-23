@@ -13,16 +13,13 @@
     z-index: 100;
 }
 .sidebar-brand{
-    /* height: 19%; */
-    /* margin:10px; */
-    /* color: white; */
-    /* height: 19%; */
-    margin: 39px;
     color: white;
+    height: 90px;
+    padding: 1rem 0rem 1rem 2rem;
 }
 .sidebar-brand span{
     display: inline-block;
-    padding-right: 10px;
+    padding-right:1rem;
 }
 .sidebar-brand h1{
     margin: 10px;
@@ -34,31 +31,40 @@
     height: 25px;
 }
 .sidebar-menu{
-    margin-top:1rem;
+    margin-top: 1rem;
 }
 .sidebar-menu ul{
     list-style-type: none;
 }
 .sidebar-menu ul li{
-    margin-bottom: 10px;
-    padding-left: 1rem;
+    width: 100%;
+    margin-bottom: 1.3rem;
+    /* padding-left: 1rem; */
 }
 .sidebar-menu ul li a{
-    text-decoration: none;
-    color: white;
     display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
     padding-left: 1rem;
+}
+.sidebar-menu ul li a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.sidebar-menu ul li a span:first-child{
+    font-size: 1.5rem;
+    padding-right: 1rem;
 }
 .sidebar-menu ul li a.active{
     background: white;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    /* padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .5rem; */
     color: crimson;
-    border-radius: 30px 0px 0px 30px;
-}
-.sidebar-menu ul li a i{
-    font-size: 20px;
-    margin-right: 10px;
+    border-radius: 10px 0px 0px 10px;
 }
 .main-content{
     margin-left:20%;
@@ -68,13 +74,12 @@ header{
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem 1.5rem;
-    background:white;
-    border: 1px solid lightgray;
     box-shadow: 2px 2px 5px gray;
+    width: 81%;
     position: fixed;
     left: 20%;
     top: 0;
-    width: 100%;
+    z-index: 100;
 }
 header h1{
     color:black;
@@ -83,18 +88,19 @@ header label{
     font-size: 1.7rem;
     padding-right: 1rem;
 }
-.header-title{
+header .header-title{
     display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
+    align-items: center;
+    justify-content:space-evenly;
+    /* justify-content: space-between; */
 }
 .search-wrapper{
     border: 1px solid gray;
-    border-radius: 30px;
+    border-radius:30px;
     height: 50px;
     display: flex;
     align-items: center;
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 .search-wrapper span{
     display: inline-block;
@@ -102,7 +108,7 @@ header label{
     font-size: 1.5rem;
 }
 .search-wrapper input{
-    height: 100%;
+    width: 100%;
     padding: .5rem;
     border: none;
     outline: none;
@@ -120,8 +126,30 @@ header label{
     color: gray;
 }
 main{
-    margin-top: 85px;
+    margin-top:85px;
     padding: 2rem 1.5rem;
-    background: chocolate;
-    min-height: calc(100vh - 90px);
+    background: gray;
+    min-height:calc(100vh - 90px);
 }
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+.card-single{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;     
+}
+.card-single div:last-child span{
+    font-size: 3rem;
+    color: crimson;
+}
+.card-single span:first-child span{
+    color: gray;
+}
+
+
