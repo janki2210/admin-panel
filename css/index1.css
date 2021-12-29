@@ -135,13 +135,14 @@ header label span{
 }
 .user-wrapper small{
     display: inline-block;
-    color: gray;
+    color: black;
+    font-weight: 900;
     /* margin-top: -10px !important; */
 }
 main{
     margin-top: 85px;
     padding: 2rem 1.5rem;
-    background: gray;
+    background: rgba(128, 128, 128, 0.116);
     min-height: calc(100vh - 90px);
 }
 .cards{
@@ -332,7 +333,7 @@ tr td:last-child{
         align-items: center;
     }
     header h2 label{
-        background: blue;
+        background: gray;
         padding-right: 0rem;
         margin-right: 1rem;
         display:inline-block;
